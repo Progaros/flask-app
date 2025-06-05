@@ -1,4 +1,7 @@
 # nice_module.py
 
+from datetime import datetime
+
 def nice_function():
-    return "This is nice text!"
+    now = datetime.now()
+    return f"Current time: {now.strftime('%H:%M:%S')}"
