@@ -9,7 +9,7 @@ def mvg_form():
         from_station = request.form.get('from_station')
         to_station = request.form.get('to_station')
         return f"<h2>MVG Graph</h2><p>From: {from_station}<br>To: {to_station}</p>"
-    return render_template('mvg_form.html')
+    return render_template('search.html')
 
 @app.route('/time')
 def time():
